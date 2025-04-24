@@ -1,0 +1,75 @@
+.page-container {
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+.header {
+  padding: 16px 24px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.icons-container {
+  display: flex;
+  gap: 8px;
+}
+
+.icons-container .MuiIconButton-root {
+  color: white;
+  padding: 8px;
+}
+
+.icons-container .MuiIconButton-root img {
+  width: 24px;
+  height: 24px;
+}
+
+.tabs-container {
+  margin: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-tabs .MuiTabs-indicator {
+  background-color: white;
+}
+
+.custom-tab {
+  color: rgba(255, 255, 255, 0.7) !important;
+  padding: 12px 24px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.custom-tab.Mui-selected {
+  color: white !important;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 24px;
+} 

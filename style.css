@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+.profile-container {
+    background-color: #2d2d2d; /* Slightly lighter dark shade for the container */
+    max-width: 450px; /* Limit width for mobile-like view */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden; /* Keep rounded corners */
+    margin-top: 20px; /* Add some space at the top */
+    margin-bottom: 20px;
+}
+
+.profile-header {
+    padding: 10px 15px;
+    position: relative; /* For absolute positioning of back button if needed */
+    background-color: rgba(0, 0, 0, 0.2); /* Slight overlay for contrast */
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.profile-image-container {
+    width: 100%;
+}
+
+.profile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.profile-details {
+    padding: 15px 20px;
+}
+
+.name-availability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.name-availability h1 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.flag-icon {
+    font-size: 1em; /* Adjust size as needed */
+    margin-left: 5px;
+}
+
+.availability-badge {
+    background-color: #4a4a4a; /* Darker yellow/gold */
+    color: #f0c040;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent wrapping inside badge */
+}
+
+.availability-badge i {
+    margin-right: 5px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px; /* Space between stat items */
+    margin-bottom: 20px;
+    color: #b0b0b0; /* Slightly dimmer text */
+    font-size: 0.9em;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+}
+
+.stat-item i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.profile-nav {
+    display: flex;
+    border-bottom: 1px solid #444;
+    margin-bottom: 15px;
+}
+
+.nav-tab {
+    flex: 1; /* Distribute space equally */
+    padding: 10px 5px;
+    background: none;
+    border: none;
+    color: #b0b0b0;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.nav-tab.active {
+    color: #f0c040; /* Highlight color */
+    border-bottom-color: #f0c040;
+    font-weight: bold;
+}
+
+.nav-tab:hover {
+    color: #ffffff;
+}
+
+.overview-content {
+    line-height: 1.6;
+    color: #c0c0c0;
+}
+
+.profile-footer {
+    padding: 20px;
+    background-color: #1f1f1f; /* Slightly different footer background */
+}
+
+.book-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #444; /* Button color */
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #555;
+    color: #ffffff;
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 400px) {
+    .name-availability {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-tab {
+        font-size: 0.9em;
+    }
+} 
